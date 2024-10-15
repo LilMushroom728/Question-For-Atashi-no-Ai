@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atashi no Ai ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            background-color: #ffe6f0; /* Light pink background */
+            text-align: center;
+            color: #d5006d; /* Dark pink text color */
+            margin: 0;
+            padding: 20px;
+        }
+        #gallery {
+            display: none; /* Initially hide gallery */
+            margin: 20px auto;
+            max-width: 1080px; /* Set maximum width for the gallery */
+        }
+        .lovely-title {
+            font-size: 2.5em; /* Larger title */
+            margin-bottom: 20px; /* Space below title */
+            color: #d5006d; /* Dark pink */
+        }
+        .image-container {
+            display: flex;
+            justify-content: flex-start; /* Align image to the left */
+            align-items: flex-start; /* Align image to the top */
+            height: 90vh; /* Set height to 90% of viewport height */
+            margin-left: -70%; /* Adjusted to shift more to the left */
+            padding-top: 20px; /* Add padding at the top */
+            position: relative; /* Enable positioning */
+        }
+        .image-container img {
+            max-width: 100%; /* Make image responsive */
+            max-height: 90vh; /* Limit height to 90% of viewport height */
+            border-radius: 8px; /* Rounded corners for image */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <p>Nag enjoy ako getting to know you day by day, and every moment na magkasama tayo e lagi akong napapasmile. Kita mo naman. You bring me so much joy sa buhay ko, and I can't help na ma-feel na there's something special between us po. I’d love to take this to the next level and officially ask you.</p>
+            <button id="continue">Continue</button>
+        </div>
+    </div>
+    <div class="container" id="container" style="display: none;">
+        <h1>Will you be my Girlfriend?</h1>
+        <button id="yes">Yes!</button>
+        <button id="no" class="movable">No?</button>
+    </div>
+    <div id="gallery">
+        <h2 class="lovely-title">I LOVE YOU ❤️❤️❤️</h2>
+        <div class="image-container" id="image-container">
+            <img src="Collage.png" alt="Image 1">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Show the gallery when "Yes" is clicked
+        document.getElementById('yes').addEventListener('click', () => {
+            document.getElementById('gallery').style.display = 'block'; // Show the gallery section
+            alert("YAHOOOOOOOOOO!!!!!! I'm so happy you pressed yes po!(DI DAHIL NAPILITAN KA LANG KASI DI MO MAPRESS YUNG NO😛)");
+        });
+    </script>
+</body>
+</html>
